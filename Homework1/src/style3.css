@@ -1,0 +1,260 @@
+body{
+    font-size: 16px;
+    background: linear-gradient(-100deg, #A2F2F1 0%, #B19AFE 100%);
+    margin:0;
+    padding: 0;
+}
+
+*{
+    font-family: Helvetica, sans-serif;
+}
+
+.main-header{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin: 0;
+    margin-bottom:8px;
+}
+.search-field {
+    height: 26px;
+    width: 15%;
+    background: #fafafa;
+    border: 1px solid #b9b9b9;
+    border-radius: 16px;
+    margin-top: 27px;
+    margin-left: 80%;
+    margin-right: 20px;
+}
+.search-field::placeholder{
+    padding-left: 10px;
+    font-weight: 550;
+}
+.h1{
+    margin-left: 20px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.account{
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+    width: 25rem;
+}
+
+.avatar{
+    background-color: white;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+}
+
+.avatar-image{
+    width: 110px;
+    height: 110px;
+    border-radius: 70%;
+}
+
+
+.avatar-name{
+    margin-left: 2px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.activity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(246,247,253);
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    max-width: 18rem;
+}
+
+.posts, .reactions{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.labels{
+    margin-bottom: 2px;
+    color:grey;
+}
+
+.count{
+    color:rgb(63,186,212);
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.logout-button{
+    float: right;
+    border: 1px solid rgb(105,198,221);
+    background-color: rgb(246,247,253);
+    width: 5rem;
+    color: rgb(63,186,212);
+    height: 35px;
+    border-radius: 25px;
+    font-weight: bold;
+    align-self: flex-end;
+    margin-bottom: 20px;
+    margin-right: 18px;
+}
+
+.post-container{
+    margin-left: 10px;
+    width: 35rem;
+}
+
+.write-post{
+    background-color: rgb(246,247,253);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 3rem;
+}
+
+.say-something{
+    height: 26px;
+    width: 90%;
+    background: #fafafa;
+    border: 1px solid #b9b9b9;
+    border-radius: 16px;
+    margin-right: 10px;
+    margin-left:10px ;
+}
+.say-something::placeholder{
+    color:rgb(63,186,212);
+    padding-left:10px;
+}
+
+.write-post-image{
+    width: 30px;
+    height: 32px;
+    border-radius: 70%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.post{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin-top: 1px;
+}
+
+.post-image{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 10px;
+    margin-left: 20px;
+    margin-top: 16px;
+    border-radius: 70%;
+}
+
+.post-content{
+    display:flex;
+    flex-direction: column;
+}
+
+.Thumbs{
+    display: flex;
+    flex-direction: row;
+}
+
+.likes, .dislikes{
+    margin: 5px;
+    margin-bottom: 15px;
+}
+.thumbsUp, .thumbsDown{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 70%;
+    margin-left: 5px;
+    margin-top: 6px;
+}
+.delete{
+    align-self: flex-end;
+    border: none;
+    background-color: white;
+    margin-left: 16rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color:grey;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.time{
+    margin-top: 23px;
+    margin-left: 8px;
+    font-size: 13px;
+    color: grey;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 890px) {
+    .main-header{
+        display: flex;
+        justify-content: center;
+    }
+   .search-field{
+       margin-left: 10px;
+       width:30%;
+   }
+    .main-content{
+        width:90%;
+        display: block;
+        margin: auto;
+    }
+
+    .account{
+        max-width: 90%;
+        margin:auto;
+    }
+
+    .avatar-image{
+        width: 5.25rem;
+        height: 5.25rem;
+    }
+
+    .activity{
+        height: 3.75rem;
+    }
+    .labels{
+        font-size: 0.75rem;
+    }
+    .count{
+        font-size: 1.125rem;
+    }
+
+    .write-post{
+        height: 3rem;
+    }
+    .delete{
+        margin-left: 100px;
+    }
+
+    .text{
+        width:70%;
+    }
+    .post-container{
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+}
+
+
